@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>About Us - Big Cookie</title>
+  <style>
+    body {
+      background-color: #333;
+      color: #ffffff;
+      font-family: Arial, sans-serif;
+      transition: background-color 1s, color 1s;
+      margin: 0;
+    }
+    
+    .container {
+      max-width: 600px;
+      margin: 20px auto;
+      text-align: center;
+    }
+    
+    .menu-bar {
+      background-color: #161616;
+      display: flex;
+      justify-content: space-between;
+      padding: 10px;
+    }
+    
+    .menu-bar a {
+      color: #f5f5f5;
+      text-decoration: none;
+      margin: 0 10px;
+    }
+    
+    .menu-bar a:hover {
+      text-decoration: underline;
+    }
+    
+    h1 {
+      text-align: center;
+      margin-top: 0;
+    }
+    
+    .dark-mode {
+      background-color: #ffffff;
+      color: #333;
+    }
+    
+    .toggle-dark-mode {
+      margin-top: 20px;
+      font-size: 18px;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 5px;
+      background-color: #161616;
+      color: #f5f5f5;
+      cursor: pointer;
+      position: fixed;
+      bottom: 20px;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+    
+    /* Responsive Styles */
+    @media only screen and (max-width: 600px) {
+      .container {
+        max-width: 100%;
+        padding: 0 20px;
+      }
+      
+      h1 {
+        font-size: 24px;
+        margin-top: 20px;
+      }
+      
+      .toggle-dark-mode {
+        font-size: 20px;
+        padding: 12px 24px;
+        margin-bottom: 20px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="menu-bar">
+    <a href="index.html">Home</a>
+    <a href="about.html">About Us</a>
+    <a href="contact.html">Contact</a>
+    <a href="cookies.html">Cookies</a>
+  </div>
+  
+  <div class="container">
+    <h1>About Us</h1>
+    <p>Welcome to the Big Cookie about page. We are a passionate team dedicated to providing you with delicious cookies that will satisfy your sweet tooth. Our cookies are made with the finest ingredients and baked to perfection. Explore our website to learn more about our cookie flavors and place your order today!</p>
+  </div>
+  
+  <button class="toggle-dark-mode" onclick="toggleDarkMode()">Toggle Dark Mode</button>
+  
+  <script>
+    function toggleDarkMode() {
+      var body = document.body;
+      body.classList.toggle("dark-mode");
+    }
+  </script>
+</body>
+</html>
